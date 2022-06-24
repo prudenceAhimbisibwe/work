@@ -4,13 +4,24 @@ def number(y):
      x = y.split()
      start=0
      end=len(x)-1
-     while start<end:
+     if start<end:
         x[start],x[end]=x[end],x[start]
         start+=1
         end-=1
         str=" "
      print(str.join(x))
 number("my name is prudence")
+
+# using inbult function
+def program(list1):
+    x=list1.split()
+    list2 =[]
+    while x != []:
+       poppedItem = x.pop()
+       list2.append(poppedItem)    
+    print(" ".join(list2))
+program("my name is prudence and I am a student at Akirachix")
+
 # write a python program that checks
 #  if a given string is a pelidrome
 def word(s):
