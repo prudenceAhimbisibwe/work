@@ -4,13 +4,13 @@ def number(y):
      x = y.split()
      start=0
      end=len(x)-1
-     if start<end:
+     while start<end:
         x[start],x[end]=x[end],x[start]
         start+=1
         end-=1
         str=" "
      print(str.join(x))
-number("my name is prudence")
+number("my name is prudence and I am 20 years old")
 
 # using inbult function
 def program(list1):
