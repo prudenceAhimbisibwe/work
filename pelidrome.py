@@ -1,5 +1,6 @@
 # write a python program that takes a string 
 # and returns the reverse of the string.
+
 def number(y):
      x = y.split()
      start=0
@@ -33,17 +34,13 @@ def word(s):
 word("word")
 # Alternatively
 def program(x):
-    y=x.split()
-    start=0
-    end=len(y)-1
-    while start<end:
-        y[start],y[end]=y[end],y[start]
-        start+=1
-        end-=1
-        w=""
-        z=(w.join(y))
-        if z==x:
-          print("It's a pelidrome")
-        else:
-         print("Not a pelidrome")
+    left=0
+    right=len(x)-1
+    while x[left]!=x[right]:
+        print("It's not a peldrome")
+        break
+    else:
+        left+=1
+        right-=1
+        print("It's a pelidrome")
 program("mum")
